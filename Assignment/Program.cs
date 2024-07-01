@@ -5,8 +5,8 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Assignment
 {
-    internal class Program 
-   
+    internal class Program
+
     {
         #region Question1
 
@@ -16,10 +16,10 @@ namespace Assignment
         // do not affect the original value outside the function.
 
         //Passing by Reference
-       // When a value type parameter is passed by reference,
-       // a reference to the actual memory location of the value is passed to the function.
-       // This means that any changes made to the parameter inside the function
-       // do affect the original value outside the function
+        // When a value type parameter is passed by reference,
+        // a reference to the actual memory location of the value is passed to the function.
+        // This means that any changes made to the parameter inside the function
+        // do affect the original value outside the function
 
 
         //static void SWAP(int x, int y)
@@ -146,7 +146,7 @@ namespace Assignment
 
         //    for (int i = 0; i < arr.Length; i++)
         //    {
-               
+
         //        if (arr[i] > max)
         //        {
         //            max = arr[i];
@@ -162,10 +162,36 @@ namespace Assignment
 
         #endregion
 
+        #region Question7
+        //static long Factorial(int num)
+        //{
+        //    long result = 1;
+        //    for (int i = 1; i <= num; i++)
+        //    {
+        //        result *= i;
+        //    }
+        //    return result;
+        //}
 
+        #endregion
 
-        static void Main(string[] args)
+        #region Question8
+        static string ChangeChar(string str, int index, char newChar)
         {
+            if (index >= str.Length  || index < 0)
+            {
+                return str;
+            }
+
+            char[] charArr = str.ToCharArray();
+            charArr[index] = newChar;
+            return new string(charArr);
+        }
+    
+    #endregion
+
+    static void Main(string[] args)
+            {
             #region Question1
             //1 Explain the difference between passing (Value type parameters) by
             //value and by reference then write a suitable c# example.
@@ -229,13 +255,40 @@ namespace Assignment
             //bool res= IsPrime(num);
             //Console.WriteLine(res);
             #endregion
-   
+
+            #region Question6
             //int min, max;
             //MinMaxArray(out max,out min, 1,2,3,4,5);
             //Console.WriteLine($"Minimum value: {min}");
             //Console.WriteLine($"Maximum value: {max}");
 
 
+            #endregion
+
+            #region Question7
+            //7 Create an iterative (non-recursive) function to calculate the factorial of the number specified
+            //as parameter
+
+            //int num;
+            //num = int.Parse(Console.ReadLine());
+            //Console.WriteLine(Factorial(num));
+
+
+
+            #endregion
+
+            #region Question8
+            //8 Create a function named "ChangeChar" to modify a letter in a certain position (0 based) of a string,
+            //replacing it with a different letter
+            string oldString = "illam";
+            int position = 1;
+            char newChar = 's';
+
+            string modString = ChangeChar(oldString, position,newChar);
+            Console.WriteLine($"Original string: {oldString}");
+            Console.WriteLine($"Modified string: {modString}");
+            #endregion
         }
     }
-}
+    }
+
