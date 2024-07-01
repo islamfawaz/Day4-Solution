@@ -45,6 +45,13 @@
         //}
         #endregion
 
+        #region Question3
+        //static void SumSubtract(int num1,int num2,out int summation ,out int subtraction)
+        //{
+        //    summation = num1+num2;
+        //    subtraction = num1 - num2;
+        //}
+        #endregion
         static void Main(string[] args)
         {
             #region Question1
@@ -79,6 +86,18 @@
             //int total = SumArray(ref num);
             //Console.WriteLine(total);
 
+            #endregion
+
+            #region Question3
+            //3 Write a c# Function that accept 4 parameters from user
+            //and return result of summation and subtracting of two numbers
+            //int num1,num2;
+            //num1=int.Parse(Console.ReadLine());
+            //num2=int.Parse(Console.ReadLine());
+            
+            //SumSubtract(num1, num2, out int summation, out int subtraction);
+            //Console.WriteLine("Summation: " + summation);
+          //  Console.WriteLine("Subtraction: " + subtraction);
             #endregion
         }
     }
