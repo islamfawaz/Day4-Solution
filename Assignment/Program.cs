@@ -17,6 +17,34 @@
             y = tem;
         }
         #endregion
+
+
+        #region Question2
+        //static int SumArray(int[] arr)
+        //{
+        //    int sum = 0;
+        //    arr = new int[] { 4, 5, 6 };
+        //    for (int i = 0; i < arr.Length; i++)
+        //    {
+        //        sum += arr[i];
+        //    }
+        //    return sum;
+
+        //}
+
+        //static int SumArray(ref int[] arr)
+        //{
+        //    int sum = 0;
+        //    arr = new int[] { 4, 5, 6 };
+        //    for (int i = 0; i < arr.Length; i++)
+        //    {
+        //        sum += arr[i];
+        //    }
+        //    return sum;
+
+        //}
+        #endregion
+
         static void Main(string[] args)
         {
             #region Question1
@@ -37,7 +65,21 @@
 
 
 
-            #endregion  
+            #endregion
+
+            #region Question2
+            //2 Explain the difference between passing (Reference type parameters)
+            //by value and by reference then write a suitable c# example.
+
+            //int [] num = {1,2,3};
+            //int total = SumArray(num);
+            //Console.WriteLine(total);
+
+            //int[] num = { 1, 2, 3 };
+            //int total = SumArray(ref num);
+            //Console.WriteLine(total);
+
+            #endregion
         }
     }
 }
