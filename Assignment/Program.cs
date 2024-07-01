@@ -52,6 +52,20 @@
         //    subtraction = num1 - num2;
         //}
         #endregion
+
+        #region Question4
+       //static int SumDigit(int num)
+       // {
+       //     int sum = 0;
+       //     while (num is not 0)
+       //     {
+       //        sum+= num % 10;
+       //         num /= 10;
+                   
+       //     }
+       //     return sum; 
+       // }
+        #endregion
         static void Main(string[] args)
         {
             #region Question1
@@ -94,10 +108,19 @@
             //int num1,num2;
             //num1=int.Parse(Console.ReadLine());
             //num2=int.Parse(Console.ReadLine());
-            
+
             //SumSubtract(num1, num2, out int summation, out int subtraction);
             //Console.WriteLine("Summation: " + summation);
-          //  Console.WriteLine("Subtraction: " + subtraction);
+            //  Console.WriteLine("Subtraction: " + subtraction);
+            #endregion
+
+            #region Question4
+            //4 Write a program in C# Sharp to create a function
+            //to calculate the sum of the individual digits of a given number.
+
+            //int n;
+            //n=int.Parse( Console.ReadLine());
+            //Console.WriteLine(SumDigit(n));
             #endregion
         }
     }
